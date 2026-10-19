@@ -1,0 +1,6 @@
+shadow prebuilt repo: conscrypt (host)
+  package: libconscrypt_openjdk_jni 17.0.0-1 (PKGBUILD build, any)
+  upstream: platform/external/conscrypt (branch: main) + platform/external/boringssl (branch: main)
+  api-level: universal (JVM bytecode host library, Android 17 / API 37 baseline)
+  layout: .pkg.tar.zst blob at root, lib64/*.jar; Android.bp providing conscrypt-unbundled, conscrypt-lite
+  date: 2026-10-19

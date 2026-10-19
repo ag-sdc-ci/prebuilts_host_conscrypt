@@ -1,0 +1,26 @@
+package {
+    default_applicable_licenses: ["external_conscrypt_license"],
+}
+
+license {
+    name: "external_conscrypt_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+java_import {
+    name: "conscrypt-unbundled",
+    jars: ["lib64/conscrypt-unbundled.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "conscrypt-lite",
+    jars: ["lib64/conscrypt-lite.jar"],
+    host_supported: true,
+}
